@@ -19,13 +19,15 @@ class Yui_OpenAI():
     OpenAI class of Yui chat bot
 
     Arguments:
-        engine - Chat engine of OpenAI
+        Yui sohbet botunun OpenAI sınıfı
 
-    Methods:
-        yui_ask - Asks a question
-        append_to_chat_log - Append answer to current chat log to get better responses
-        get_chat_log - Return user's chat log
-    """
+     Argümanlar:
+         Engine - OpenAI'nin sohbet motoru
+
+     Yöntemler:
+         yui_ask - Bir soru sorar
+         append_to_chat_log - Daha iyi yanıtlar almak için yanıtı geçerli sohbet günlüğüne ekle
+         get_chat_log - Kullanıcının sohbet günlüğünü döndürür    """
 
     def __init__(self, engine) -> None:
         self.engine = engine
@@ -35,7 +37,7 @@ class Yui_OpenAI():
             chat_log = defaults.Chat_Log
         prmpt = f"{chat_log}You: {question}\n{Config.CHAT_BOT_NAME}:"
         response = completion.create(
-            prompt=prmpt, engine=self.engine, stop=["\nYou"], temperature=0.9,
+            prompt=prmpt, engine=self.engine, stop=["\nsen"], temperature=0.9,
             top_p=1, frequency_penalty=0, presence_penalty=0.6, best_of=1,
             max_tokens=defaults.Max_Tokens)
         return response.choices[0].text.strip()
