@@ -41,4 +41,5 @@ Video_and_gif_Response = [
      "Videoları doğru anlayamıyorum :( . Sadece kısa mesaj kullanarak sohbet edelim"]
 
 Document_Response = [
-    "Bu dosyayı indirmek için verilerimi boşa harcamak istemiyorum",]
+    "Bu dosyayı indirmek için verilerimi boşa harcamak istemiyorum"
+]
