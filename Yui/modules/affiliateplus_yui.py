@@ -46,7 +46,7 @@ class Yui_Affiliate():
     async def __prepare_message(self, message):
         py_t = Async_PyTranslator()
         msg_origin = await py_t._detect_lang(message)
-        if msg_origin != "en":
-            return await py_t.translate(message, "en")
+        if msg_origin != "tr":
+            return await py_t.translate(message, "tr")
         else:
             return message
