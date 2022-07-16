@@ -5,19 +5,18 @@ from config import Config
 
 class Defaults():
     """
-    All the default data of Yui Chat bot
+    Harley Chat botunun tüm varsayılan verileri
 
-    Variables:
-        Chat_Log - Default chat log
-        Engine - Default OpenAI Ai Engine
-        Max_Tokens - Default Maximum token count
-        CHAT_LOG_DB - Dict to save users chat logs (temp)
-        Engines_list - List of engines names available in OpenAI 
-    """
+     Değişkenler:
+         Chat_Log - Varsayılan sohbet günlüğü
+         Motor - Varsayılan OpenAI Yapay Zeka Motoru
+         Max_Tokens - Varsayılan Maksimum jeton sayısı
+         CHAT_LOG_DB - Kullanıcıların sohbet günlüklerini kaydetmeyi söyle (geçici)
+         Engines_list - OpenAI'de kullanılabilen motor adlarının listesi """
     Chat_Log = f"""
-You: Hey, Wassup?
-{Config.CHAT_BOT_NAME}: Hey there!
-You: I'm""" + " {uname} " + f"""!
+You: Hey, neler oluyor?
+{Config.CHAT_BOT_NAME}: Merhaba!
+You: Ben""" + " {uname} " + f"""!
 {Config.CHAT_BOT_NAME}:
 """
     Engine = "text-davinci-002"
