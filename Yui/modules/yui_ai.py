@@ -111,17 +111,16 @@ To set an engine use `/engine` command followed by the engine code name you want
 @yuiai.on_message(filters.command("help"))
 async def help_yui(_, message: Message):
     help_msg = """
-**✨ Help Section**
+** Yardım Bölümü** ✨
+
+**OpenAI motoru 🤔 nasıl değiştirilir?**
+    - OpenAI Engine'i değiştirmek için '/engine' komutunu ve ardından motor adını kullanın. Daha fazla bilgi için /engine komutunu gönderin
+
+**Birini Bot'tan nasıl yasaklayabilirim 🤔?**
+    - Bu bir sohbet botu tho. Neden birini yasaklamanız gerekiyor? Gerekirse "banable" dalını kullanın ve '/ban' komutunu gönderin (Sadece Heroku Kullanıcıları için)
 
 
-**How to change OpenAI engine 🤔?**
-    - To change OpenAI Engine use `/engine` command followed by the engine name. For more info send /engine command
-
-**How to ban someone from Bot 🤔?**
-    - This is a chat bot tho. Why you need to ban someone? If it's necessary use "banable" branch and send `/ban` command (Only for Heroku Users)
-
-
-**Made with ❤️ by @NexaBotsUpdates**
+**Made with ❤️ by @CanliSohbetGruplari **
 """
     await message.reply(help_msg, reply_to_message_id=message.id)
 
