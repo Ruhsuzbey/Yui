@@ -5,8 +5,8 @@ from sqlite3 import connect
 
 class Yui_Database():
     """
-    Database of Yui Chat bot
-        This database won't be used if you're hosting this on heroku
+    Yui Chat bot veritabanı
+        Bunu heroku'da barındırıyorsanız bu veritabanı kullanılmaz
     """
 
     def __init__(self) -> None:
