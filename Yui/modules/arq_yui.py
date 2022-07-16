@@ -10,8 +10,8 @@ class Yui_ARQ():
     ARQ Class of Yui Chat Bot
 
     Methods:
-        __close_session - Closes the aiohttp session
-        ask_yui - Get response from luna chat bot
+        __close_session - aiohttp oturumunu kapatır
+        ask_yui - harley sohbet botundan yanıt alın
     """
 
     def __init__(self, api, key) -> None:
